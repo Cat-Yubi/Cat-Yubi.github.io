@@ -1,0 +1,24 @@
+---
+layout: page
+title: "Algoritm"
+permalink: /categories/algoritm/
+---
+
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="category-title">Algoritm</h2>
+        <ul class="category-list">
+          {% assign category_posts = site.posts | where_exp: "post", "post.categories contains 'algoritm'" %}
+          {% for post in category_posts %}
+          <li>
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            <span class="post-date">{{ post.date | date: "%B %d, %Y" }}</span>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

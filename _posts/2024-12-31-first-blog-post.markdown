@@ -2,7 +2,7 @@
 layout: post
 title: "My First Blog Post"
 date: 2024-12-31 10:00:00 +0900
-categories: [blog, personal]
+categories: [blog, algoritm]
 tags: [introduction, first-post]
 ---
 

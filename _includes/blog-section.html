@@ -1,46 +1,14 @@
+<!-- blog -->
 <section class="section">
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
-        <h2 class="section-title">Latest Blogs</h2>
+        <h2 class="section-title">Blogs</h2>
       </div>
-      {% for post in site.posts limit:6 %}
-      <div class="col-lg-4 col-md-6 mb-5">
-        <article class="card shadow">
-          <img class="rounded card-img-top" src="{{ post.image }}" alt="post-thumb">
-          <div class="card-body">
-            <h4 class="card-title">{{ post.title }}</h4>
-            <p>{{ post.excerpt }}</p>
-            <a href="{{ post.url }}" class="btn btn-xs btn-primary">Read More</a>
-          </div>
-        </article>
-      </div>
+      {% for post in site.posts offset:0 limit:3 %}
+      {% include post.html %}
       {% endfor %}
     </div>
   </div>
 </section>
-
-<!-- Blog Posts by Category -->
-<section class="section">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h2 class="section-title">Posts by Category</h2>
-      </div>
-    </div>
-    {% for category in site.categories %}
-    <div class="category-section">
-      <h3>{{ category[0] }}</h3> <!-- 카테고리 이름 -->
-      <ul class="category-list">
-        {% for post in category[1] %}
-        <li>
-          <a href="{{ post.url }}">{{ post.title }}</a>
-          <span class="post-date">({{ post.date | date: "%B %d, %Y" }})</span>
-        </li>
-        {% endfor %}
-      </ul>
-    </div>
-    {% endfor %}
-  </div>
-</section>
-<!-- /Blog Posts by Category -->
+<!-- /blog -->

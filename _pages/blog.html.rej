@@ -1,0 +1,30 @@
+diff a/_pages/blog.html b/_pages/blog.html	(rejected hunks)
+@@ -2,12 +2,26 @@
+ layout: page
+ title: Blogs
+ ---
++
+ <!-- blog -->
+ <section class="section">
+   <div class="container">
+     <div class="row">
+-      {% for post in site.posts %}
+-      {% include post.html %}
++      <!-- 카테고리별로 그룹화 -->
++      {% for category in site.categories %}
++      <div class="col-12">
++        <!-- 카테고리 제목 -->
++        <h2 class="category-title">{{ category[0] }}</h2>
++        <ul class="category-list">
++          <!-- 해당 카테고리의 포스트 리스트 -->
++          {% for post in category[1] %}
++          <li>
++            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
++            <span class="post-date">{{ post.date | date: "%B %d, %Y" }}</span>
++          </li>
++          {% endfor %}
++        </ul>
++      </div>
+       {% endfor %}
+     </div>
+   </div>

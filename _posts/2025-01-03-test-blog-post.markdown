@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "My First Blog Post"
+title: "My First Blog Post1"
 date: 2024-12-31 10:00:00 +0900
 categories: [algorithm]
 tags: [introduction, first-post]

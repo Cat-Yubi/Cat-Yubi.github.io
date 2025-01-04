@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Algoritm"
+title: "Algorithm"
 permalink: /categories/algorithm/
 ---
 
@@ -8,9 +8,9 @@ permalink: /categories/algorithm/
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h2 class="category-title">Algoritm</h2>
+        <h2 class="category-title">Algorithm</h2>
         <ul class="category-list">
-          {% assign category_posts = site.posts | where_exp: "post", "post.categories contains 'algoritm'" %}
+          {% assign category_posts = site.posts | where_exp: "post", "post.categories contains 'algorithm'" %}
           {% for post in category_posts %}
           <li>
             <a href="{{ post.url | relative_url }}">{{ post.title }}</a>

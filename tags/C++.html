@@ -1,14 +1,14 @@
 ---
 layout: page
-title: Algorithm
-tag: Algorithm
+title: C/C++
+tag: C/C++
 ---
 <!-- blog -->
 <section class="section">
   <div class="container">
     <div class="row">
-      {% for file in site.til %}
-        {% if file.tags contains "Algorithm" %}
+        {% for file in site.til %}
+        {% if file.tags contains "C++" %}
           <h2>{{ file.title }}</h2>
           <p>{{ file.content }}</p>
         {% endif %}

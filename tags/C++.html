@@ -7,9 +7,9 @@ tag: C/C++
 <section class="section">
   <div class="container">
     <div class="row">
-      {% for file in site.til %}
-        {% if file.tags contains "C++" %}
-            {% include post.html %}
+      {% for post in site.posts %}
+        {% if post.tags contains page.tag %}
+          {% include post.html %}
         {% endif %}
       {% endfor %}
     </div>

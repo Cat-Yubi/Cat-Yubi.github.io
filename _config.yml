@@ -32,7 +32,3 @@ exclude:
   - LICENSE.text
   - README.md
   - SECURITY.md
-
-collections:
-  til:
-    output: true

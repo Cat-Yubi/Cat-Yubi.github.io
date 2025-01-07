@@ -7,7 +7,7 @@ author: kimtaewan
 tags:   TIL
 ---
 
-## 태그별 포스트 모음
-- [Algorithm](/tags/Algorithm)
-- [C/C++](/tags/C%2B%2B)
-- [Unreal](/tags/Unreal)
+## Category
+### - [Algorithm](/tags/Algorithm)
+### - [C/C++](/tags/C%2B%2B)
+### - [Unreal](/tags/Unreal)

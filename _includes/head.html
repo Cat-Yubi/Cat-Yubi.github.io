@@ -9,7 +9,6 @@
   <!-- theme meta -->
   <meta name="theme-name" content="kross-jekyll" />
 
-    
   {% if site.author %}
   <meta name="author" content="{{ . }}">
   {% endif %}
@@ -19,9 +18,12 @@
   <link rel="stylesheet" href="{{ css | relative_url }}">
   {% endfor %}
 
+  <!-- Google Fonts for Korean -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+  
   <!-- Main Stylesheet -->
   <link href="{{ '/assets/scss/style.css' | relative_url }}" rel="stylesheet">
-
+  
   <!--Favicon-->
   <link rel="shortcut icon" href="{{ '/assets/images/favicon.png' | relative_url }} " type="image/x-icon">
   <link rel="icon" href="{{ '/assets/images/favicon.png' | relative_url }} " type="image/x-icon">
@@ -30,5 +32,4 @@
   {% if site.data.settings.google-analytics %}
     {% include google-analytics.html %}
   {% endif %}
-
 </head>

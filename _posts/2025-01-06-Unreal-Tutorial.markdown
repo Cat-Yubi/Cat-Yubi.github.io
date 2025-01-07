@@ -1,11 +1,10 @@
 ---
 layout: post
-title:  Unreal 기본 기능 및 튜토리얼얼
+title:  Unreal Tutorial
 date:   2025-01-06 10:05:55 +0300
 author: kimtaewan
 tags: Unreal
 ---
-
 
 ## Unreal 기본 기능 및 튜토리얼
 

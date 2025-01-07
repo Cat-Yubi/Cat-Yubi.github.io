@@ -32,6 +32,7 @@ layout: default
         <div class="content">
           {% if page.image %}
           <img src="{{ page.image | relative_url }}" class="img-fluid rounded float-left mr-5 mb-4" alt="{{ page.title }}">
+          <div style="clear: both; margin-top: 20px;"></div>
           {% endif %}
           {{ content }}
         </div>

@@ -1,8 +1,6 @@
 ---
 ---
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
-
 /*!------------------------------------------------------------------
 [MAIN STYLESHEET]
 
@@ -13,7 +11,6 @@ VERSION:	Versoin Number
 /*------------------------------------------------------------------
 [TABLE OF CONTENTS]
 -------------------------------------------------------------------*/
-
 
 @import 'variables';
 
@@ -36,7 +33,3 @@ VERSION:	Versoin Number
 @import 'templates/about';
 
 @import 'templates/portfolio';
-
-body {
-    font-family: 'Noto Sans KR', sans-serif;
-}

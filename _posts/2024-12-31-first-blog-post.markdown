@@ -8,7 +8,7 @@ tags: [introduction, first-post]
 
 # Welcome to my blog!
 
-한국어가 가능할까?ㅁㅁ.   km.
+한국어가 가능할까?ㅁㅁ.   km. .
 This is my very first post. I'm excited to start writing about topics I'm passionate about, including web development, game programming, and more.
 
 ## What to Expect
